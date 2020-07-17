@@ -1,8 +1,8 @@
 <template>
-  <div class="navbar p-0 container-fluid d-inline">
+  <div class="navbar p-0 container-fluid d-inline ">
     <!--NOTE START Navbar -->
-    <nav class="mb-1 navbar navbar-expand-lg bg-dark p-0">
-      <a class="navbar-brand ml-5 text-white" href="#">N E X U S</a>
+    <nav class="mb-1 navbar navbar-expand-lg  p-0 shadow">
+      <a class="navbar-brand ml-5 nexus text-white" href="#"><span class="NE">N E</span>  <span class="X">X</span> <span class="US">U S</span> </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -43,7 +43,7 @@
             </div>
           </li>
 
-          <form class="form-inline ml-5">
+          <form class="form-inline ml-3">
             <div class="md-form my-0">
               <input
                 class="form-control searchbar mr-sm-2"
@@ -73,11 +73,11 @@
               aria-expanded="false">
               <img
                 src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
-                class="rounded-circle avatar mb-2 z-depth-0"
+                class="rounded-circle avatar mb- z-depth-0"
                 alt="avatar image"/>
             </a>
             <div
-              class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
+              class="dropdown-menu dropArrow dropdown-menu-lg-right dropdown-secondary"
               aria-labelledby="navbarDropdownMenuLink-55">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
@@ -111,17 +111,45 @@ export default {
 <style scoped>
 .navbar {
   height: 3rem;
+  background-color:  #182338;
+  font-family: 'Syncopate', sans-serif;
+}
+
+.nexus{
+  /* color: #7206ff; */
+  font-weight: 300;
+  font-size: 2rem;
+  margin-top: px;
+  font-family: 'Syncopate', sans-serif;
+}
+
+.NE{
+font-size: 1.8;
+}
+
+.X{
+  font-size: 2.8rem;
+}
+
+.US{
+
 }
 
 .navbar-brand{
-  font-size: 2.25rem;
-  margin-bottom: 5px;
+  /* font-size: 2.25rem;
+  margin-bottom: 5px; */
 }
 
 .avatar {
-  height: 2.65rem;
+  height: 2.5rem;
   margin-bottom: 5px;
+   /* font-family: 'Syncopate', sans-serif; */
 }
+
+/* .dropArrow{
+  color: white;
+  background-color: white;
+} */
 
 .searchbar{
   width: 1050px;

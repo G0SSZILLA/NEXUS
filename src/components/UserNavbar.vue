@@ -2,18 +2,22 @@
   <div class="UserNavbar">
 
 <!-- NOTE AVATAR -->
-    <div class="row row-1 bg-dark">
-      <div class="col-1">
+    <div class="row row-1">
+        <div class="col-12">
+             <div class="row row-2"><div class="col-1">
         <img
           src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
-          class="rounded-circle ml-2 mt-2 avatar z-depth-0"
+          class="rounded-circle ml-5 mt-2 avatar z-depth-0 shadow"
           alt="avatar image"/>
       </div>
-      <div class="col-11 "></div>
+      <div class="col-10 p-0 "></div></div>
+        </div>
+       
+      
     </div>
    
 <!--NOTE Navbar -->
-        <nav class="mb-1 navbar navbar-expand-lg bg-dark p-0 border">
+        <nav class="mb-1 navbar navbar-expand-lg  p-0 shadow ">
       <!-- <a class="navbar-brand ml-5 text-white" href="#">N E X U S</a> -->
       <button
         class="navbar-toggler"
@@ -115,16 +119,28 @@ export default {
 <style scoped>
 .row-1 {
   margin-top: 1rem;
-  height: 150px;
+  height: 190px;
+  background-color: #182338;
 }
 
-/* .row-2{
-    height: 200px;
-} */
+.navbar{
+    background-color: #273552;
+    font-family: 'Syncopate', sans-serif;
+}
+
+
+.row-2{
+    height: 168px;
+    /* background-color: #fff; */
+    background-image: url(https://api.time.com/wp-content/uploads/2014/05/wallpaperfx.jpg);
+    background-size: cover;
+    background-position-y: 28%;
+    
+}
 
 
 .avatar{
-    height: 8.5rem;
+    height: 10.8rem;
 }
 
 </style>
