@@ -2,12 +2,13 @@
 <template>
 <div class="app">
 <navbar/>
-<router-view />
+<UserNavbar/>
 </div>
 </template>
 
 <script>
 import navbar from "./components/navbar"
+import UserNavbar from"./components/UserNavbar"
 export default {
 name: 'app',
 
@@ -19,7 +20,7 @@ computed:{},
 
 methods:{},
 
-components:{navbar}
+components:{navbar,UserNavbar}
 }
 
 </script>
