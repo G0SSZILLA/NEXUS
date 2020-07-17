@@ -1,9 +1,9 @@
 <template>
-<div class="component">
+<div class="navbar p-0 container-fluid d-inline">
 
 <!--NOTE START Navbar -->
-<nav class="mb-1 navbar navbar-expand-lg navbar-dark secondary-color lighten-1">
-  <a class="navbar-brand" href="#">Navbar</a>
+<nav class="mb-1 navbar navbar-expand-lg bg-dark p-0 ">
+  <a class="navbar-brand ml-5 text-white" href="#">N E X U S</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
     aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">Dropdown
+          aria-haspopup="true" aria-expanded="false">Community
         </a>
         <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">
           <a class="dropdown-item" href="#">Action</a>
@@ -33,15 +33,15 @@
       </li>
     </ul>
     <ul class="navbar-nav ml-auto nav-flex-icons">
-      <li class="nav-item">
+      <li class="nav-item mr-3 mt-1 text-white">
         <a class="nav-link waves-effect waves-light">1
-          <i class="fas fa-envelope"></i>
+          <i class="message fas fa-envelope mt-1"></i>
         </a>
       </li>
-      <li class="nav-item avatar dropdown">
+      <li class="nav-item avatar dropdown mb-3">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
-          <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle z-depth-0"
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle avatar mb-2 z-depth-0"
             alt="avatar image">
         </a>
         <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
@@ -62,7 +62,7 @@
 <script>
 
 export default {
-name: 'component',
+name: 'navbar',
 
 data(){
 return {}
@@ -79,6 +79,15 @@ components:{}
 
 
 <style scoped>
-
+.navbar{
+    height: 3rem;
+}
+.avatar{
+height: 2rem;
+margin-bottom: 5px;
+}
+.message{
+   
+}
 </style>
 
