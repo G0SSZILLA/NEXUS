@@ -2,7 +2,7 @@
   <div class="navbar p-0 container-fluid d-inline ">
     <!--NOTE START Navbar -->
     <nav class="mb-1 navbar navbar-expand-lg  p-0 shadow">
-      <a class="navbar-brand ml-5 nexus text-white" href="#"><span class="NE">N E</span>  <span class="X">X</span> <span class="US">U S</span> </a>
+      <a class="navbar-brand ml-4  nexus text-white" href="#">N E <span class="X">X</span> U S</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -29,7 +29,7 @@
           </li> -->
           <li class="nav-item dropdown">
             <a
-              class="nav-link dropdown-toggle text-white ml-4 mt-2"
+              class="nav-link dropdown-toggle text-white ml-4  mt-3"
               id="navbarDropdownMenuLink-555"
               data-toggle="dropdown"
               aria-haspopup="true"
@@ -43,7 +43,7 @@
             </div>
           </li>
 
-          <form class="form-inline ml-3">
+          <form class="form-inline ml-4">
             <div class="md-form my-0">
               <input
                 class="form-control searchbar mr-sm-2"
@@ -152,7 +152,9 @@ font-size: 1.8;
 } */
 
 .searchbar{
-  width: 1050px;
+  width: 980px;
+  /* background-color:#273552; */
+  /* color: white; */
 }
 
 .message {
