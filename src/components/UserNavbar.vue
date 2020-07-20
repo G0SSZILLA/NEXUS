@@ -2,7 +2,7 @@
   <div class="UserNavbar">
 
 <!-- NOTE AVATAR -->
-    <div class="row row-1 container-fluid p-0 m-0">
+    <div class="row row-1 container-fluid p-0 m-0 mt-3">
         <div class="col-12">
              <div class="row row-2"><div class="col-1">
         <img
