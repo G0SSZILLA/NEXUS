@@ -1,33 +1,23 @@
 <template>
-  <div class="Home Masonry  fluid columnWidth">
+  <div class="Home">
     <div class="row container-fluid mt-4 mr-0 pr-0">
         <div class="col-12 pr-0">
 
-      <div class="grid ">
+ <div class="grid">
   <div class="grid-sizer"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--width2 grid-item--height2"></div>
-  <div class="grid-item grid-item--height3"></div>
+  <div class="grid-item grid-item--width2"></div>
   <div class="grid-item grid-item--height2"></div>
-  <div class="grid-item grid-item--width3"></div>
   <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--height2"></div>
-  <div class="grid-item grid-item--width2 grid-item--height3"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--height2"></div>
   <div class="grid-item"></div>
   <div class="grid-item grid-item--width2 grid-item--height2"></div>
   <div class="grid-item grid-item--width2"></div>
+  <div class="grid-item grid-item--width2"></div>
+  <div class="grid-item grid-item--height2"></div>
   <div class="grid-item"></div>
+  <div class="grid-item grid-item--width2"></div>
   <div class="grid-item grid-item--height2"></div>
   <div class="grid-item"></div>
   <div class="grid-item"></div>
-  <div class="grid-item grid-item--height3"></div>
-  <div class="grid-item grid-item--height2"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--height2"></div>
 </div>
         
         </div>
@@ -45,8 +35,19 @@ export default {
     return {};
   },
 
+  mounted() {
+       this.grid.isotope({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  masonry: {
+    columnWidth: '.grid-sizer'
+  }
+});
+  },
+
   computed: {
-    
+
+
   },
 
   methods: {
@@ -59,48 +60,49 @@ export default {
 
 
 <style scoped>
-.row {
-    height: 300px;
-}
 * { box-sizing: border-box; }
 
-body { font-family: sans-serif; }
+/* force scrollbar, prevents initial gap */
+html {
+  overflow-y: scroll; 
+}
+
+body {
+  font-family: sans-serif;
+}
 
 /* ---- grid ---- */
 
 .grid {
-  background: #EEE;
-  max-width: 1903px;
+  background: #DDD;
 }
 
-/* clearfix */
+/* clear fix */
 .grid:after {
   content: '';
   display: block;
   clear: both;
 }
 
-/* ---- grid-item ---- */
+/* ---- .element-item ---- */
 
-.grid-sizer,
-.grid-item {
-  width: 15%;
+/* 5 columns, percentage width */
+.grid-item,
+.grid-sizer {
+  width: 20%;
 }
 
 .grid-item {
-  height: 500px;
   float: left;
-  background: #D26;
+  height: 425px;
+  background: #0D8;
   border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
-  margin: 10px;
+  border-color: hsla(0, 0%, 0%, 0.7);
+  margin: 12px;
+  width: 385px;
 }
 
-.grid-item--width2 { width:  50%; }
-.grid-item--width3 { width:  60%; }
+.grid-item--width2 { width: 55%; }
+.grid-item--height2 { height: 300px; }
 
-.grid-item--height2 { height: 400px; }
-.grid-item--height3 { height: 260px; }
-.grid-item--height4 { height: 360px; }
 </style>
