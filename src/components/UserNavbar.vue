@@ -2,7 +2,7 @@
   <div class="UserNavbar">
 
 <!-- NOTE AVATAR -->
-    <div class="row row-1">
+    <div class="row row-1 container-fluid p-0 m-0">
         <div class="col-12">
              <div class="row row-2"><div class="col-1">
         <img
@@ -17,8 +17,8 @@
     </div>
    
 <!--NOTE Navbar -->
-        <nav class="mb-1 navbar navbar-expand-lg  p-0 shadow ">
-      <!-- <a class="navbar-brand ml-5 text-white" href="#">N E X U S</a> -->
+        <nav class="mb-1 navbar navbar-expand-lg p-0 shadow ">
+      
       <button
         class="navbar-toggler"
         type="button"
@@ -58,17 +58,6 @@
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
           </li>
-<!-- 
-          <form class="form-inline ml-5">
-            <div class="md-form my-0">
-              <input
-                class="form-control searchbar mr-sm-2"
-                type="text"
-                placeholder="Search"
-                aria-label="Search"/>
-            </div>
-            <button class="btn btn-md my-2 my-sm-0  bg-white" type="submit">Search</button>
-          </form> -->
         </ul>
         
         <!-- <ul>
@@ -119,28 +108,34 @@ export default {
 <style scoped>
 .row-1 {
   margin-top: 1rem;
-  height: 190px;
+  height: 200px;
   background-color: #182338;
 }
 
 .navbar{
     background-color: #273552;
     font-family: 'Syncopate', sans-serif;
+    width: 1903px;
+    
 }
 
+/* .imgbar{
+width: 80%;
+} */
 
 .row-2{
     height: 168px;
     /* background-color: #fff; */
     background-image: url(https://api.time.com/wp-content/uploads/2014/05/wallpaperfx.jpg);
     background-size: cover;
+    /* background-position-x: 90%; */
     background-position-y: 28%;
     
 }
 
 
 .avatar{
-    height: 10.8rem;
+    height: 11.5rem;
 }
 
 </style>

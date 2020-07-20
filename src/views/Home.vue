@@ -3,7 +3,6 @@
     <div class="row">
         <div class="col-3">
       <Post />
-
         </div>
     </div>
     

@@ -3,14 +3,14 @@
   <div class="app">
     <navbar />
     <UserNavbar />
-    
+     <router-view />
   </div>
 </template>
 
 <script>
 import navbar from "./components/navbar";
 import UserNavbar from "./components/UserNavbar";
-// import Home from "./views/Home";
+
 
 export default {
   name: "app",
@@ -29,7 +29,6 @@ export default {
 
 
 <style scoped>
-
 </style>
 
 
