@@ -1,28 +1,30 @@
 
 <template>
-<div class="app">
-<navbar/>
-<UserNavbar/>
-</div>
+  <div class="app">
+    <navbar />
+    <UserNavbar />
+    
+  </div>
 </template>
 
 <script>
-import navbar from "./components/navbar"
-import UserNavbar from"./components/UserNavbar"
+import navbar from "./components/navbar";
+import UserNavbar from "./components/UserNavbar";
+// import Home from "./views/Home";
+
 export default {
-name: 'app',
+  name: "app",
 
-data(){
-return {}
-},
+  data() {
+    return {};
+  },
 
-computed:{},
+  computed: {},
 
-methods:{},
+  methods: {},
 
-components:{navbar,UserNavbar}
-}
-
+  components: { navbar, UserNavbar }
+};
 </script>
 
 

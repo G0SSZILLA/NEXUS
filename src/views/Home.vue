@@ -1,28 +1,35 @@
 <template>
-<div class="home container-fluid">
+  <div class="Home container-fluid">
+    <div class="row">
+        <div class="col-3">
+      <Post />
 
-</div>
+        </div>
+    </div>
+    
+  </div>
 </template>
 
 <script>
-
+import Post from "../components/Post.vue";
 export default {
-name: 'Home',
+  name: 'Home',
 
-data(){
-return {}
-},
+  data() {
+    return {};
+  },
 
-computed:{},
+  computed: {},
 
-methods:{},
+  methods: {},
 
-components:{}
-}
-
+  components: { Post }
+};
 </script>
 
 
 <style scoped>
-
+.row {
+    height: 300px;
+}
 </style>
