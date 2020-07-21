@@ -1,4 +1,5 @@
 <template>
+ <!-- `eslint-disable-next-line -->
   <div class="Home">
     <div class="row container-fluid mt-4 mr-0 pr-0">
         <div class="col-12 pr-0">
@@ -7,7 +8,7 @@
   <div class="grid-sizer"></div>
   <div class="grid-item grid-item--width2"></div>
   <div class="grid-item grid-item--height2"></div>
-  <div class="grid-item"></div>
+  <Post class="grid-item"/>
   <div class="grid-item"></div>
   <div class="grid-item grid-item--width2 grid-item--height2"></div>
   <div class="grid-item grid-item--width2"></div>
@@ -27,7 +28,7 @@
 </template>
 
 <script>
-// import Post from "../components/Post.vue";
+import Post from "../components/Post.vue";
 export default {
   name: 'Home',
 
@@ -54,7 +55,7 @@ export default {
     
   },
 
-  components: {  }
+  components: {Post  }
 };
 </script>
 
@@ -90,6 +91,7 @@ body {
 .grid-item,
 .grid-sizer {
   width: 20%;
+  border-radius: 5px;
 }
 
 .grid-item {
