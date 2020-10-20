@@ -2,7 +2,7 @@
   <div class="navbar p-0 container-fluid d-inline">
     <!--NOTE START Navbar -->
     <nav class="mb-1 navbar navbar-expand-lg  p-0 shadow">
-      <a class="navbar-brand ml-4  nexus text-white" href="#">N E <span class="X">X</span> U S</a>
+      <a class="navbar-brand ml-4 nexus text-white" href="#">N E <span class="X">X</span> U S</a>
       <button
         class="navbar-toggler"
         type="button"
